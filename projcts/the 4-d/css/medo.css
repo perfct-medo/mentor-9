@@ -1,0 +1,157 @@
+:root {}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .container {
+        width: 375px;
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1360px;
+    }
+}
+
+
+/* strt the projewct */
+
+.container {
+    margin: 100px auto;
+    background-color: hsl(0, 0%, 95%);
+    box-shadow: 0px 0px 5px 0px #0202023d;
+}
+
+.box {
+    padding: 100px 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .box {
+        padding: 80px 15px;
+    }
+}
+
+.container .sed,
+.suvs,
+.lox {
+    padding: 35px 66px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container .sed {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.container .suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container .lox {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.container h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    color: white;
+    letter-spacing: 2px;
+}
+
+.container p {
+    font-size: 15px;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin: 0 0 30px;
+}
+
+.container input {
+    margin: 50px 50px 25px 15px;
+    color: white;
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 24px;
+    border: 2px solid white;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.container .sed input {
+    color: hsl(31, 77%, 52%);
+}
+
+.container .suvs input {
+    color: hsl(184, 100%, 22%);
+}
+
+.container .lox input {
+    color: hsl(179, 100%, 13%);
+}
+
+.container .lox input:hover {
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.container .suvs input:hover {
+    color: white;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container .sed input:hover {
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+}

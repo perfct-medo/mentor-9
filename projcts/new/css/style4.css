@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+.center-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-position{
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50px,-5px);
+}
+.circle-100{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.circle-200{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.arrow{
+  width: 0px;
+  height: 0px;
+  border-top-color: transparent;
+  border-bottom-color: red;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-style: solid;
+  border-width: 5px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+

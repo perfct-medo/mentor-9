@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    perspective: 300px;
+}
+div{
+    margin: 70px auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    perspective: 300px;
+    transition: transform 1s;
+    transform-origin: center right;
+    
+}
+div:hover{
+    transform: rotateY(-180deg);
+
+}
+div::before{
+     content: "back";
+     background-color: aqua;
+     color: black;
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     width: 100%;
+     height: 100%;   
+    
+   
+
+}
+div::after{
+     content: "front";
+     background-color: tomato;
+     color: black;
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     width: 100%;
+     height: 100%;   
+     transform: rotateY(180deg);
+}
